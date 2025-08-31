@@ -2,12 +2,17 @@
 // import { FaComputer } from "react-icons/fa6";
 // import "./index.css";
 
-import { useState } from "react";
-import ComponentOne from "./components/ComponentOne";
-import ComponentTwo from "./components/ComponentTwo";
-import ExampleOne from "./components/ExampleOne";
-import ExampleTwo from "./components/ExampleTwo";
-import ExampleThree from "./components/ExampleThree";
+// import { useState } from "react";
+// import ComponentOne from "./components/ComponentOne";
+// import ComponentTwo from "./components/ComponentTwo";
+// import ExampleOne from "./components/ExampleOne";
+// import ExampleTwo from "./components/ExampleTwo";
+// import ExampleThree from "./components/ExampleThree";
+// import Counter from "./components/UseStatesBasics";
+import CounterExercise from "./components/CounterExercise";
+import Profile from "./components/Profile";
+import ShoppingList from "./components/ShoppingList";
+import TodoList from "./components/TodoList";
 
 // import IconComponent from "./components/IconComponent";
 // import ProfileCard from "./components/ProfileCard";
@@ -50,14 +55,22 @@ import ExampleThree from "./components/ExampleThree";
 //   </div>
 // }
 
+// const App = ()=>{
+//   return <div>
+//       <ExampleOne />
+//       <ExampleTwo />
+//       <ExampleThree />
+//   </div>
+// }
+
 const App = ()=>{
   return <div>
-      <ExampleOne />
-      <ExampleTwo />
-      <ExampleThree />
+    <CounterExercise />
+    <TodoList />
+    <Profile />
+    <ShoppingList />
   </div>
 }
-
 
 
 export default App;
