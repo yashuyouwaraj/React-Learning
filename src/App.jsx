@@ -9,9 +9,11 @@
 // import ExampleTwo from "./components/ExampleTwo";
 // import ExampleThree from "./components/ExampleThree";
 // import Counter from "./components/UseStatesBasics";
+import CopyInput from "./components/CopyInput";
 import CounterExercise from "./components/CounterExercise";
 import Profile from "./components/Profile";
 import ShoppingList from "./components/ShoppingList";
+import Switcher from "./components/Switcher";
 import TodoList from "./components/TodoList";
 
 // import IconComponent from "./components/IconComponent";
@@ -63,12 +65,24 @@ import TodoList from "./components/TodoList";
 //   </div>
 // }
 
-const App = ()=>{
+// const App = ()=>{
+//   return <div>
+//     <CounterExercise />
+//     <TodoList />
+//     <Profile />
+//     <ShoppingList />
+//   </div>
+// }
+
+// const App = () =>{
+//   return <div>
+//     <CopyInput />
+//   </div>
+// }
+
+const App = () =>{
   return <div>
-    <CounterExercise />
-    <TodoList />
-    <Profile />
-    <ShoppingList />
+    <Switcher />
   </div>
 }
 
