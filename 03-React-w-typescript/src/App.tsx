@@ -17,6 +17,7 @@ import MyComponents from './components/MyComponents'
 import MyProvider from './components/MyContext'
 import Counters from './components/Counters'
 import CounterReducer from './components/CounterReducer'
+import MyComponent from './components/MyComponent'
 
 // const App = () => {
 //   return (
@@ -75,11 +76,20 @@ import CounterReducer from './components/CounterReducer'
 // }
 
 
+// const App = () => {
+//   return (
+//     <div>
+//       <Counters />
+//       <CounterReducer />
+//     </div>
+//   )
+// }
+
+
 const App = () => {
   return (
     <div>
-      <Counters />
-      <CounterReducer />
+      <MyComponent />
     </div>
   )
 }
