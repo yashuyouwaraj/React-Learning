@@ -18,6 +18,7 @@ import MyProvider from './components/MyContext'
 import Counters from './components/Counters'
 import CounterReducer from './components/CounterReducer'
 import MyComponent from './components/MyComponent'
+import UserList from './components/UserList'
 
 // const App = () => {
 //   return (
@@ -89,7 +90,8 @@ import MyComponent from './components/MyComponent'
 const App = () => {
   return (
     <div>
-      <MyComponent />
+      {/* <MyComponent /> */}
+      <UserList />
     </div>
   )
 }
