@@ -1,4 +1,4 @@
-import React from 'react'
+
 import type { AdminInfoList } from '../types'
 
 const AdminInfo = ({ admin }: { admin: AdminInfoList }) => {
