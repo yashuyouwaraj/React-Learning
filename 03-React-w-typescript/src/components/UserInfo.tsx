@@ -1,4 +1,4 @@
-import React from 'react'
+
 import type { Info } from '../types'
 
 const UserInfo = ({ user }: { user: Info }) => {

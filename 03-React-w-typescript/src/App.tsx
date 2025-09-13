@@ -13,6 +13,10 @@ import Form from './components/Form'
 import FocusInput from './components/FocusInput'
 import ContactForm from './components/ContactForm'
 import EventHandling from './components/EventHandling'
+import MyComponents from './components/MyComponents'
+import MyProvider from './components/MyContext'
+import Counters from './components/Counters'
+import CounterReducer from './components/CounterReducer'
 
 // const App = () => {
 //   return (
@@ -50,13 +54,32 @@ import EventHandling from './components/EventHandling'
 // }
 
 
+// const App = () => {
+//   return (
+//     <div>
+//       <Form />
+//       <FocusInput />
+//       <ContactForm />
+//       <EventHandling />
+//     </div>
+//   )
+// }
+
+
+// const App = () => {
+//   return (
+//     <MyProvider>
+//       <MyComponents />
+//     </MyProvider>
+//   )
+// }
+
+
 const App = () => {
   return (
     <div>
-      <Form />
-      <FocusInput />
-      <ContactForm />
-      <EventHandling />
+      <Counters />
+      <CounterReducer />
     </div>
   )
 }

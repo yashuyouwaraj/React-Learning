@@ -1,5 +1,5 @@
-import React from 'react'
-import ReusableUserInfo, { type UserInfo } from './ReusableUserInfo'
+
+import { type UserInfo } from './ReusableUserInfo'
 
 type AdminInfo=UserInfo & {
     role:string ;

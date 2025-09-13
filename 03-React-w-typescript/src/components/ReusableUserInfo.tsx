@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 export type UserInfo={
     id:number ;
