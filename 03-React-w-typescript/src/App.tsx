@@ -9,6 +9,10 @@ import Counter from './components/Counter'
 import CounterExe from './components/CounterExe'
 import UserProfile from './components/UserProfile'
 import TodoList from './components/TodoList'
+import Form from './components/Form'
+import FocusInput from './components/FocusInput'
+import ContactForm from './components/ContactForm'
+import EventHandling from './components/EventHandling'
 
 // const App = () => {
 //   return (
@@ -34,13 +38,25 @@ import TodoList from './components/TodoList'
 //   )
 // }
 
+// const App = () => {
+//   return (
+//     <div>
+//       {/* <Counter /> */}
+//       <CounterExe />
+//       <UserProfile />
+//       <TodoList />
+//     </div>
+//   )
+// }
+
+
 const App = () => {
   return (
     <div>
-      {/* <Counter /> */}
-      <CounterExe />
-      <UserProfile />
-      <TodoList />
+      <Form />
+      <FocusInput />
+      <ContactForm />
+      <EventHandling />
     </div>
   )
 }
