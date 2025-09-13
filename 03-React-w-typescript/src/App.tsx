@@ -5,6 +5,10 @@ import UserInfo from './components/UserInfo'
 import AdminInfo from './components/AdminInfor'
 import ReusableUserInfo from './components/ReusableUserInfo'
 import ReusableAdminInfo from './components/ReusableAdminInfo'
+import Counter from './components/Counter'
+import CounterExe from './components/CounterExe'
+import UserProfile from './components/UserProfile'
+import TodoList from './components/TodoList'
 
 // const App = () => {
 //   return (
@@ -21,11 +25,22 @@ import ReusableAdminInfo from './components/ReusableAdminInfo'
 // }
 
 
+// const App = () => {
+//   return (
+//     <div>
+//       <ReusableUserInfo id={1} name="Yashu" email="yashu@gmail.com" age={25} location={['Chennai, India']} />
+//       <ReusableAdminInfo id={2} name="Aman" email="aman@gmail.com" age={30} location={['Mumbai, India']} role="Admin" />
+//     </div>
+//   )
+// }
+
 const App = () => {
   return (
     <div>
-      <ReusableUserInfo id={1} name="Yashu" email="yashu@gmail.com" age={25} location={['Chennai, India']} />
-      <ReusableAdminInfo id={2} name="Aman" email="aman@gmail.com" age={30} location={['Mumbai, India']} role="Admin" />
+      {/* <Counter /> */}
+      <CounterExe />
+      <UserProfile />
+      <TodoList />
     </div>
   )
 }
