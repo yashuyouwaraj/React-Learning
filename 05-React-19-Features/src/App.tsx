@@ -3,6 +3,7 @@ import "./index.css"
 import FetchTodo from './components/FetchTodo'
 import Theme from './components/Theme';
 import Form from './components/Form';
+import Count from './components/Count';
 
 
 // const App = () => {
@@ -29,13 +30,20 @@ import Form from './components/Form';
 //   )
 // }
 
-import React from 'react'
-import FormStatus from './components/FormStatus';
+
+// import FormStatus from './components/FormStatus';
+// const App = () => {
+//   return (
+//     <div>
+//       <FormStatus />
+//     </div>
+//   )
+// }
 
 const App = () => {
   return (
     <div>
-      <FormStatus />
+      <Count />
     </div>
   )
 }
