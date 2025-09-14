@@ -1,5 +1,5 @@
 const Form = () => {
-  const formAction = (formData) => {
+  const formAction = (formData:any) => {
     const userData = {
       name: formData.get("name"),
       email: formData.get("email"),

@@ -21,10 +21,21 @@ import Form from './components/Form';
 //   )
 // }
 
+// const App = () => {
+//   return (
+//     <div>
+//       <Form />
+//     </div>
+//   )
+// }
+
+import React from 'react'
+import FormStatus from './components/FormStatus';
+
 const App = () => {
   return (
     <div>
-      <Form />
+      <FormStatus />
     </div>
   )
 }
