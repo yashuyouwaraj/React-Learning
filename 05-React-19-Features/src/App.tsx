@@ -56,7 +56,7 @@ const App = () => {
   const [activeTab,setActiveTab]=useState('home')
   const [isPending,startTransition]=useTransition();
 
-  const handleTabChange=(tab)=>{
+  const handleTabChange=(tab:any)=>{
     startTransition(()=>{
       setActiveTab(tab);
     })
