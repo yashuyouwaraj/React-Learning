@@ -17,10 +17,21 @@ import { motion } from "motion/react"
 
 // 2. Transitions
 
+// const App = () => {
+//   return (
+//     <div>
+//       <motion.div className="box" initial={{x:-300}} animate={{x:300}} transition={{duration: 3 , delay:3 , ease: "backInOut"}} />
+//     </div>
+//   )
+// }
+
+
+// 3. KeyFrames
+
 const App = () => {
   return (
     <div>
-      <motion.div className="box" initial={{x:-300}} animate={{x:300}} transition={{duration: 3 , delay:3 , ease: "backInOut"}} />
+      <motion.div className="box" animate={{scale: [1,2,3,4,3,2,1] , rotate: [0,270,0,180,50] , borderRadius: ["20%","40%", "60%" , "20%","50%"] }} transition={{duration:5}} />
     </div>
   )
 }
