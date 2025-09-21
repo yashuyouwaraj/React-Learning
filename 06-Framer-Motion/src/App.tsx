@@ -1,4 +1,6 @@
 import { motion } from "motion/react"
+import PulsingButton from "./components/PulsingButton"
+import BouncingLoader from "./components/BouncingLoader"
 
 // 1. Transformations
 // const App = () => {
@@ -27,11 +29,19 @@ import { motion } from "motion/react"
 
 
 // 3. KeyFrames
+// const App = () => {
+//   return (
+//     <div>
+//       <motion.div className="box" animate={{scale: [1,2,3,4,3,2,1] , rotate: [0,270,0,180,50] , borderRadius: ["20%","40%", "60%" , "20%","50%"] }} transition={{duration:5}} />
+//     </div>
+//   )
+// }
 
 const App = () => {
   return (
     <div>
-      <motion.div className="box" animate={{scale: [1,2,3,4,3,2,1] , rotate: [0,270,0,180,50] , borderRadius: ["20%","40%", "60%" , "20%","50%"] }} transition={{duration:5}} />
+      {/* <PulsingButton /> */}
+      <BouncingLoader />
     </div>
   )
 }
