@@ -1,8 +1,13 @@
-import { motion } from "motion/react"
+import { motion, scale } from "motion/react"
 import PulsingButton from "./components/PulsingButton"
 import BouncingLoader from "./components/BouncingLoader"
+import { useState } from "react"
+import FlippingCard from "./components/FlippingCard"
+import AnimatedShape from "./components/AnimatedShape"
+import AnimatedCard from "./components/AnimatedCard"
+import ImageGallery from "./components/ImageGallery"
 
-// 1. Transformations
+// -------------- 1.Transformations --------------------
 // const App = () => {
 //   return (
 //     <div>
@@ -17,7 +22,7 @@ import BouncingLoader from "./components/BouncingLoader"
 // }
 
 
-// 2. Transitions
+// ------------------- 2.Transitions ----------------------
 
 // const App = () => {
 //   return (
@@ -28,7 +33,8 @@ import BouncingLoader from "./components/BouncingLoader"
 // }
 
 
-// 3. KeyFrames
+// ------------------- 3.KeyFrames --------------------
+
 // const App = () => {
 //   return (
 //     <div>
@@ -37,11 +43,72 @@ import BouncingLoader from "./components/BouncingLoader"
 //   )
 // }
 
+// const App = () => {
+//   return (
+//     <div>
+//       {/* <PulsingButton /> */}
+//       <BouncingLoader />
+//     </div>
+//   )
+// }
+
+
+// ----------------------- 4.Variants ----------------------
+
+// const Variants={
+//   hidden:{ opacity:0 , scale:0.8 },
+//   visible : {opacity: 1, scale:1},
+//   exit:{opacity:0,scale:0.5}
+// }
+
+// const App = () => {
+//   const [isVisible,setIsVisible]=useState(true)
+//   return (
+//     <motion.div className="box" variants={Variants} initial="hidden" animate={isVisible?"visible":"hidden"} exit="exit" transition={{duration:2}} onClick={()=>setIsVisible(!isVisible)}>
+//     </motion.div>
+//   )
+// }
+
+
+// const App = () => {
+//   return (
+//     <div>
+//       <FlippingCard />
+//       <AnimatedShape />
+//     </div>
+//   )
+// }
+
+
+// --------------------5.Gestures -------------------------
+
+// const App = () => {
+//   return (
+//     <div>
+//       {/* WhileHover */}
+//       <motion.div className="box" whileHover={{scale:1.2, rotate:10}} transition={{type: "spring",stiffness:300}} />
+
+//       {/* WhileTap */}
+//       <motion.div className="box" whileTap={{scale:0.8,backgroundColor:"crimson"}} transition={{type:"spring",stiffness:300}} />
+
+//       {/* WhileDrag */}
+//       <motion.div className="box" drag="x"/>
+
+//       {/* whileDrag Constraints */}
+//       <motion.div className="box" drag dragConstraints={{
+//         top:-50,bottom:50,left:-50,right:50,
+//       }}/>
+
+//     </div>
+//   )
+// }
+
 const App = () => {
   return (
     <div>
-      {/* <PulsingButton /> */}
-      <BouncingLoader />
+      <AnimatedCard />
+      <ImageGallery />
+      <AnimatedShape />
     </div>
   )
 }
