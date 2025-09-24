@@ -1,4 +1,4 @@
-import { motion, scale } from "motion/react"
+import { motion, scale, useMotionValue, useMotionValueEvent } from "motion/react"
 import PulsingButton from "./components/PulsingButton"
 import BouncingLoader from "./components/BouncingLoader"
 import { useState } from "react"
@@ -8,6 +8,7 @@ import AnimatedCard from "./components/AnimatedCard"
 import ImageGallery from "./components/ImageGallery"
 import StaggerAnimation from "./components/StaggerAnimation"
 import AnimatedGallery from "./components/AnimatedGallery"
+import RangeSilder from "./components/RangeSilder"
 
 // -------------- 1.Transformations --------------------
 // const App = () => {
@@ -126,11 +127,41 @@ import AnimatedGallery from "./components/AnimatedGallery"
 //----------------6.Stagger Animation ------------------
 
 
+// const App = () => {
+//   return (
+//     <div>
+//       <StaggerAnimation />
+//       <AnimatedGallery />
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+//----------------7.useMotionValue ------------------
+
+// const App = () => {
+//   const x = useMotionValue(0)
+
+//   useMotionValueEvent(x,"animationStart", ()=>{
+//     console.log("animation started on x")
+//   })
+//   useMotionValueEvent(x,"change",(latest)=>{
+//     console.log("x changed to",latest)
+//   })
+//   return (
+//     <motion.div className="box" drag dragConstraints={{left:0,right:200}} style={{x}}></motion.div>
+//   )
+// }
+
+// export default App
+
 const App = () => {
   return (
     <div>
-      <StaggerAnimation />
-      <AnimatedGallery />
+      <RangeSilder />
     </div>
   )
 }
