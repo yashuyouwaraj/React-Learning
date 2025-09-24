@@ -6,6 +6,8 @@ import FlippingCard from "./components/FlippingCard"
 import AnimatedShape from "./components/AnimatedShape"
 import AnimatedCard from "./components/AnimatedCard"
 import ImageGallery from "./components/ImageGallery"
+import StaggerAnimation from "./components/StaggerAnimation"
+import AnimatedGallery from "./components/AnimatedGallery"
 
 // -------------- 1.Transformations --------------------
 // const App = () => {
@@ -21,6 +23,8 @@ import ImageGallery from "./components/ImageGallery"
 //   )
 // }
 
+// export default App
+
 
 // ------------------- 2.Transitions ----------------------
 
@@ -32,6 +36,7 @@ import ImageGallery from "./components/ImageGallery"
 //   )
 // }
 
+// export default App
 
 // ------------------- 3.KeyFrames --------------------
 
@@ -52,6 +57,7 @@ import ImageGallery from "./components/ImageGallery"
 //   )
 // }
 
+// export default App
 
 // ----------------------- 4.Variants ----------------------
 
@@ -79,6 +85,7 @@ import ImageGallery from "./components/ImageGallery"
 //   )
 // }
 
+// export default App
 
 // --------------------5.Gestures -------------------------
 
@@ -103,12 +110,27 @@ import ImageGallery from "./components/ImageGallery"
 //   )
 // }
 
+// const App = () => {
+//   return (
+//     <div>
+//       <AnimatedCard />
+//       <ImageGallery />
+//       <AnimatedShape />
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+//----------------6.Stagger Animation ------------------
+
+
 const App = () => {
   return (
     <div>
-      <AnimatedCard />
-      <ImageGallery />
-      <AnimatedShape />
+      <StaggerAnimation />
+      <AnimatedGallery />
     </div>
   )
 }
