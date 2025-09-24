@@ -1,8 +1,9 @@
-import { motion, useMotionValue } from "motion/react"
+import { motion, useMotionValue, useSpring } from "motion/react"
 import type { ChangeEvent } from "react"
 
 const RangeSilder = () => {
-    const scale=useMotionValue(1)
+    // const scale=useMotionValue(1)
+    const scale=useSpring(1)
     const changeHandler = (e:ChangeEvent<HTMLInputElement>)=>scale.set(parseFloat(e.target.value))
   return (
     <div>
