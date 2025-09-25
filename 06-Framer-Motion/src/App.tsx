@@ -12,6 +12,8 @@ import RangeSilder from "./components/RangeSilder"
 import DraggableBox from "./components/DraggableBox"
 import AnimatedCardScrollEffect from "./components/AnimatedCardScrollEffect"
 import ScrollAnimation from "./components/ScrollAnimation"
+import ScrollAnimationWithuseTransform from "./components/ScrollAnimationWithuseTransform"
+import AnimationScroll from "./components/AnimationScroll"
 
 // -------------- 1.Transformations --------------------
 // const App = () => {
@@ -203,10 +205,30 @@ import ScrollAnimation from "./components/ScrollAnimation"
 
 // ------------------- useScroll ----------------------
 
+// const App = () => {
+//   return (
+//     <div>
+//       <ScrollAnimation />
+//     </div>
+//   )
+// }
+
+
+// const App = () => {
+//   return (
+//     <div>
+//       <ScrollAnimationWithuseTransform />
+//     </div>
+//   )
+// }
+
 const App = () => {
   return (
     <div>
-      <ScrollAnimation />
+      <AnimationScroll />
+      <div className="h-[200vh] bg-gray-800 flex items-center justify-center ">
+        <h2 className="text-white">Scroll Down</h2>
+      </div>
     </div>
   )
 }
