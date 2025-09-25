@@ -11,6 +11,7 @@ import AnimatedGallery from "./components/AnimatedGallery"
 import RangeSilder from "./components/RangeSilder"
 import DraggableBox from "./components/DraggableBox"
 import AnimatedCardScrollEffect from "./components/AnimatedCardScrollEffect"
+import ScrollAnimation from "./components/ScrollAnimation"
 
 // -------------- 1.Transformations --------------------
 // const App = () => {
@@ -187,13 +188,25 @@ import AnimatedCardScrollEffect from "./components/AnimatedCardScrollEffect"
 //--------------- Scroll Driven Animations ------------------
 
 // -------------------whileInView----------------------
+// const App = () => {
+//   return (
+//     <div>
+//       <h1 className="text-center text-3xl mb-4">Scroll Down To See The Animation</h1>
+//       <div className="h-screen">
+//         <AnimatedCardScrollEffect />
+//       </div>
+//     </div>
+//   )
+// }
+
+// export default App
+
+// ------------------- useScroll ----------------------
+
 const App = () => {
   return (
     <div>
-      <h1 className="text-center text-3xl mb-4">Scroll Down To See The Animation</h1>
-      <div className="h-screen">
-        <AnimatedCardScrollEffect />
-      </div>
+      <ScrollAnimation />
     </div>
   )
 }
