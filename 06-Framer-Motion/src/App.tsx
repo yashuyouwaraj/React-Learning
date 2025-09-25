@@ -10,6 +10,7 @@ import StaggerAnimation from "./components/StaggerAnimation"
 import AnimatedGallery from "./components/AnimatedGallery"
 import RangeSilder from "./components/RangeSilder"
 import DraggableBox from "./components/DraggableBox"
+import AnimatedCardScrollEffect from "./components/AnimatedCardScrollEffect"
 
 // -------------- 1.Transformations --------------------
 // const App = () => {
@@ -171,10 +172,28 @@ import DraggableBox from "./components/DraggableBox"
 
 //----------------7.useTransform ------------------
 
+// const App = () => {
+//   return (
+//     <div>
+//       <DraggableBox />
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+//--------------8.Scroll Triggered Animations & ----------- 
+//--------------- Scroll Driven Animations ------------------
+
+// -------------------whileInView----------------------
 const App = () => {
   return (
     <div>
-      <DraggableBox />
+      <h1 className="text-center text-3xl mb-4">Scroll Down To See The Animation</h1>
+      <div className="h-screen">
+        <AnimatedCardScrollEffect />
+      </div>
     </div>
   )
 }
