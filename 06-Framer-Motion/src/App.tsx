@@ -9,6 +9,7 @@ import ImageGallery from "./components/ImageGallery"
 import StaggerAnimation from "./components/StaggerAnimation"
 import AnimatedGallery from "./components/AnimatedGallery"
 import RangeSilder from "./components/RangeSilder"
+import DraggableBox from "./components/DraggableBox"
 
 // -------------- 1.Transformations --------------------
 // const App = () => {
@@ -158,10 +159,22 @@ import RangeSilder from "./components/RangeSilder"
 
 // export default App
 
+// const App = () => {
+//   return (
+//     <div>
+//       <RangeSilder />
+//     </div>
+//   )
+// }
+
+// export default App
+
+//----------------7.useTransform ------------------
+
 const App = () => {
   return (
     <div>
-      <RangeSilder />
+      <DraggableBox />
     </div>
   )
 }
