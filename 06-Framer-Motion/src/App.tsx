@@ -14,6 +14,12 @@ import AnimatedCardScrollEffect from "./components/AnimatedCardScrollEffect"
 import ScrollAnimation from "./components/ScrollAnimation"
 import ScrollAnimationWithuseTransform from "./components/ScrollAnimationWithuseTransform"
 import AnimationScroll from "./components/AnimationScroll"
+import MovingBox from "./components/MovingBox"
+import BouncingCircle from "./components/BouncingCircle"
+import SpiningIcon from "./components/SpiningIcon"
+import SkewedRectangle from "./components/SkewedRectangle"
+import CombinedTransition from "./components/CombinedTransition"
+import SequentialTransformation from "./components/SequentialTransformation"
 
 // -------------- 1.Transformations --------------------
 // const App = () => {
@@ -222,13 +228,30 @@ import AnimationScroll from "./components/AnimationScroll"
 //   )
 // }
 
+// const App = () => {
+//   return (
+//     <div>
+//       <AnimationScroll />
+//       <div className="h-[200vh] bg-gray-800 flex items-center justify-center ">
+//         <h2 className="text-white">Scroll Down</h2>
+//       </div>
+//     </div>
+//   )
+// }
+
+// export default App
+
+//-------------------Exercise-------------------------
+
 const App = () => {
   return (
     <div>
-      <AnimationScroll />
-      <div className="h-[200vh] bg-gray-800 flex items-center justify-center ">
-        <h2 className="text-white">Scroll Down</h2>
-      </div>
+      {/* <MovingBox /> */}
+      {/* <BouncingCircle /> */}
+      {/* <SpiningIcon /> */}
+      {/* <SkewedRectangle /> */}
+      {/* <CombinedTransition /> */}
+      <SequentialTransformation />
     </div>
   )
 }
