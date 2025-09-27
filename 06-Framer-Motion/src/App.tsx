@@ -33,6 +33,11 @@ import SlidingText from "./components/SlidingText"
 import ZigZagAnimation from "./components/ZigZagAnimation"
 import WaveEffect from "./components/WaveEffect"
 import BackgroundAnimation from "./components/BackgroundAnimation"
+import SimpleFadeIn from "./components/SimpleFadeIn"
+import SlidingMenu from "./components/SlidingMenu"
+import TooltipWithVariants from "./components/TooltipWithVariants"
+import ToggleSwitchAnimation from "./components/ToggleSwitchAnimation"
+import DynamicListAnimation from "./components/DynamicListAnimation"
 
 // -------------- 1.Transformations --------------------
 // const App = () => {
@@ -312,7 +317,13 @@ import BackgroundAnimation from "./components/BackgroundAnimation"
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      {/* <SimpleFadeIn /> */}
+      {/* <SlidingMenu /> */}
+      {/* <TooltipWithVariants /> */}
+      {/* <ToggleSwitchAnimation /> */}
+      <DynamicListAnimation />
+    </div>
   )
 }
 
