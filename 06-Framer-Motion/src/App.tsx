@@ -26,6 +26,13 @@ import SlideDown from "./components/SlideDown"
 import ResponsiveAnimations from "./components/ResponsiveAnimations"
 import Accordion from "./components/Accordion"
 import ToastNotification from "./components/ToastNotification"
+import BouncingBall from "./components/BouncingBall"
+import PulsatingEffect from "./components/PulsatingEffect"
+import ColorChangeAnimation from "./components/ColorChangeAnimation"
+import SlidingText from "./components/SlidingText"
+import ZigZagAnimation from "./components/ZigZagAnimation"
+import WaveEffect from "./components/WaveEffect"
+import BackgroundAnimation from "./components/BackgroundAnimation"
 
 // -------------- 1.Transformations --------------------
 // const App = () => {
@@ -266,16 +273,46 @@ import ToastNotification from "./components/ToastNotification"
 
 //---------------Exercise Transitions----------------
 
+// const App = () => {
+//   return (
+//     <div>
+//       <FadeComponent />
+//       <Slide />
+//       <SlideDown />
+//       <ResponsiveAnimations />
+//       <Accordion />
+//       <ToastNotification />
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+//---------------Exercise Keyframes----------------
+
+// const App = () => {
+//   return (
+//     <div>
+//       <BouncingBall />
+//       <PulsatingEffect />
+//       <ColorChangeAnimation />
+//       <SlidingText />
+//       <ZigZagAnimation />
+//       <WaveEffect />
+//       <BackgroundAnimation />
+
+//     </div>
+//   )
+// }
+
+// export default App
+
+//---------------Exercise Variants----------------
+
 const App = () => {
   return (
-    <div>
-      {/* <FadeComponent /> */}
-      {/* <Slide /> */}
-      {/* <SlideDown /> */}
-      {/* <ResponsiveAnimations /> */}
-      {/* <Accordion /> */}
-      <ToastNotification />
-    </div>
+    <div>App</div>
   )
 }
 
