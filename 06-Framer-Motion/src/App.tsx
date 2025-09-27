@@ -20,6 +20,12 @@ import SpiningIcon from "./components/SpiningIcon"
 import SkewedRectangle from "./components/SkewedRectangle"
 import CombinedTransition from "./components/CombinedTransition"
 import SequentialTransformation from "./components/SequentialTransformation"
+import FadeComponent from "./components/FadeComponent"
+import Slide from "./components/Slide"
+import SlideDown from "./components/SlideDown"
+import ResponsiveAnimations from "./components/ResponsiveAnimations"
+import Accordion from "./components/Accordion"
+import ToastNotification from "./components/ToastNotification"
 
 // -------------- 1.Transformations --------------------
 // const App = () => {
@@ -241,17 +247,34 @@ import SequentialTransformation from "./components/SequentialTransformation"
 
 // export default App
 
-//-------------------Exercise-------------------------
+//---------------Exercise Transformation----------------
+
+// const App = () => {
+//   return (
+//     <div>
+//       <MovingBox />
+//       <BouncingCircle />
+//       <SpiningIcon />
+//       <SkewedRectangle />
+//       <CombinedTransition />
+//       <SequentialTransformation />
+//     </div>
+//   )
+// }
+
+// export default App
+
+//---------------Exercise Transitions----------------
 
 const App = () => {
   return (
     <div>
-      {/* <MovingBox /> */}
-      {/* <BouncingCircle /> */}
-      {/* <SpiningIcon /> */}
-      {/* <SkewedRectangle /> */}
-      {/* <CombinedTransition /> */}
-      <SequentialTransformation />
+      {/* <FadeComponent /> */}
+      {/* <Slide /> */}
+      {/* <SlideDown /> */}
+      {/* <ResponsiveAnimations /> */}
+      {/* <Accordion /> */}
+      <ToastNotification />
     </div>
   )
 }
