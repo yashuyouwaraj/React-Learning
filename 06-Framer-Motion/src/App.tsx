@@ -49,6 +49,10 @@ import StaggeredImageGallery from "./components/StaggeredImageGallery"
 import StaggeredButtonPress from "./components/StaggeredButtonPress"
 import StaggeredGridLayout from "./components/StaggeredGridLayout"
 import StaggeredTextReveal from "./components/StaggeredTextReveal"
+import DraggableBoxPosition from "./components/DraggableBoxPosition"
+import HoverLinkedScale from "./components/HoverLinkedScale"
+import SpringAnimatedPosition from "./components/SpringAnimatedPosition"
+import DynamicRotation from "./components/DynamicRotation"
 
 // -------------- 1.Transformations --------------------
 // const App = () => {
@@ -359,15 +363,40 @@ import StaggeredTextReveal from "./components/StaggeredTextReveal"
 
 //---------------Exercise Stagger Animation----------------
 
+// const App = () => {
+//   return (
+//     <div>
+//       <StaggeredListItems />
+//       <StaggeredImageGallery />
+//       <StaggeredButtonPress />
+//       <StaggeredGridLayout />
+//       <StaggeredTextReveal />
+//     </div>
+//   )
+// }
+
+// export default App
+
+//--------Exercise useMotionValue and useSpring-------------
+
+// const App = () => {
+//   return (
+//     <div>
+//       <DraggableBoxPosition />
+//       <HoverLinkedScale />
+//       <SpringAnimatedPosition />
+//       <DynamicRotation />
+//     </div>
+//   )
+// }
+
+// export default App
+
+//---------------Exercise whileInView----------------
+
 const App = () => {
   return (
-    <div>
-      {/* <StaggeredListItems /> */}
-      {/* <StaggeredImageGallery /> */}
-      {/* <StaggeredButtonPress /> */}
-      {/* <StaggeredGridLayout /> */}
-      <StaggeredTextReveal />
-    </div>
+    <div>App</div>
   )
 }
 
