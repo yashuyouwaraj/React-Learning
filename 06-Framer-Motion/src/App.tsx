@@ -53,6 +53,10 @@ import DraggableBoxPosition from "./components/DraggableBoxPosition"
 import HoverLinkedScale from "./components/HoverLinkedScale"
 import SpringAnimatedPosition from "./components/SpringAnimatedPosition"
 import DynamicRotation from "./components/DynamicRotation"
+import StaggeredFadeAndSlideIn from "./components/StaggeredFadeAndSlideIn"
+import CardFlipAnimation from "./components/CardFlipAnimation"
+import ComplexTimeLineAnimation from "./components/ComplexTimeLineAnimation"
+import InteractiveHoverAndInViewAnimation from "./components/InteractiveHoverAndInViewAnimation"
 
 // -------------- 1.Transformations --------------------
 // const App = () => {
@@ -396,7 +400,12 @@ import DynamicRotation from "./components/DynamicRotation"
 
 const App = () => {
   return (
-    <div>App</div>
+    <div className="h-[150rem] flex justify-center items-center bg-[#0d1017]" >
+      {/* <StaggeredFadeAndSlideIn /> */}
+      {/* <CardFlipAnimation /> */}
+      {/* <ComplexTimeLineAnimation /> */}
+      <InteractiveHoverAndInViewAnimation />
+    </div>
   )
 }
 
