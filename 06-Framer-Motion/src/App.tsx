@@ -38,6 +38,12 @@ import SlidingMenu from "./components/SlidingMenu"
 import TooltipWithVariants from "./components/TooltipWithVariants"
 import ToggleSwitchAnimation from "./components/ToggleSwitchAnimation"
 import DynamicListAnimation from "./components/DynamicListAnimation"
+import SwipeableCard from "./components/SwipeableCard"
+import DraggableBox2 from "./components/DraggableBox2"
+import RotateOnDrag from "./components/RotateOnDrag"
+import TapToChangeColor from "./components/TapToChangeColor"
+import LongPressToChangeSize from "./components/LongPressToChangeSize"
+import GestureBasedImageGallery from "./components/GestureBasedImageGallery"
 
 // -------------- 1.Transformations --------------------
 // const App = () => {
@@ -315,14 +321,31 @@ import DynamicListAnimation from "./components/DynamicListAnimation"
 
 //---------------Exercise Variants----------------
 
+// const App = () => {
+//   return (
+//     <div>
+//       <SimpleFadeIn />
+//       <SlidingMenu />
+//       <TooltipWithVariants />
+//       <ToggleSwitchAnimation />
+//       <DynamicListAnimation />
+//     </div>
+//   )
+// }
+
+// export default App
+
+//---------------Exercise Gestures----------------
+
 const App = () => {
   return (
     <div>
-      {/* <SimpleFadeIn /> */}
-      {/* <SlidingMenu /> */}
-      {/* <TooltipWithVariants /> */}
-      {/* <ToggleSwitchAnimation /> */}
-      <DynamicListAnimation />
+      {/* <SwipeableCard /> */}
+      {/* <DraggableBox2 /> */}
+      {/* <RotateOnDrag /> */}
+      {/* <TapToChangeColor /> */}
+      {/* <LongPressToChangeSize /> */}
+      <GestureBasedImageGallery />
     </div>
   )
 }
