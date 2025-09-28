@@ -44,6 +44,11 @@ import RotateOnDrag from "./components/RotateOnDrag"
 import TapToChangeColor from "./components/TapToChangeColor"
 import LongPressToChangeSize from "./components/LongPressToChangeSize"
 import GestureBasedImageGallery from "./components/GestureBasedImageGallery"
+import StaggeredListItems from "./components/StaggeredListItems"
+import StaggeredImageGallery from "./components/StaggeredImageGallery"
+import StaggeredButtonPress from "./components/StaggeredButtonPress"
+import StaggeredGridLayout from "./components/StaggeredGridLayout"
+import StaggeredTextReveal from "./components/StaggeredTextReveal"
 
 // -------------- 1.Transformations --------------------
 // const App = () => {
@@ -337,15 +342,31 @@ import GestureBasedImageGallery from "./components/GestureBasedImageGallery"
 
 //---------------Exercise Gestures----------------
 
+// const App = () => {
+//   return (
+//     <div>
+//       <SwipeableCard />
+//       <DraggableBox2 />
+//       <RotateOnDrag />
+//       <TapToChangeColor />
+//       <LongPressToChangeSize />
+//       <GestureBasedImageGallery />
+//     </div>
+//   )
+// }
+
+// export default App
+
+//---------------Exercise Stagger Animation----------------
+
 const App = () => {
   return (
     <div>
-      {/* <SwipeableCard /> */}
-      {/* <DraggableBox2 /> */}
-      {/* <RotateOnDrag /> */}
-      {/* <TapToChangeColor /> */}
-      {/* <LongPressToChangeSize /> */}
-      <GestureBasedImageGallery />
+      {/* <StaggeredListItems /> */}
+      {/* <StaggeredImageGallery /> */}
+      {/* <StaggeredButtonPress /> */}
+      {/* <StaggeredGridLayout /> */}
+      <StaggeredTextReveal />
     </div>
   )
 }
