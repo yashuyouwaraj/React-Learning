@@ -1,7 +1,17 @@
+import GamesInfo from "./components/GamesInfo"
+import MoviesInfo from "./components/MoviesInfo"
+import RenderList from "./components/RenderList"
+import { games, movies } from "./data/Data"
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+    <RenderList data={games} resourceName="games" dataToRender={GamesInfo} />
+    <hr />
+    <br />
+    <br />
+    <RenderList data={movies} resourceName="movies" dataToRender={MoviesInfo} />
+    </>
   )
 }
 
