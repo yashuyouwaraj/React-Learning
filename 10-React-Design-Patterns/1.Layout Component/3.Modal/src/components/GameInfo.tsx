@@ -13,7 +13,7 @@ const GamesInfo = ({ data }: GamesInfoProps) => {
   return (
     <div>
       {data.map((d, index) => {
-        const { gameName, gameRating, gameGenre, gameLanguages } = d;
+        const { gameName, gameRating, gameGenre } = d;
         return (
           <div key={index}>
             <h1>Game Name: {gameName}</h1>
