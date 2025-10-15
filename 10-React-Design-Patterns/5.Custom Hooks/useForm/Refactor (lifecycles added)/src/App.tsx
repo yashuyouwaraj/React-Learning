@@ -1,11 +1,9 @@
-import Posts from "./components/Posts";
-import Todos from "./components/Todo";
+import MyForm from "./components/MyForm";
 
 const App = () => {
   return (
     <div>
-      <Todos />
-      {/* <Posts /> */}
+      <MyForm />
     </div>
   );
 };

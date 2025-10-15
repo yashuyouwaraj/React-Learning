@@ -1,23 +1,39 @@
-import { useEffect, useState } from "react"
+import React, { useState } from "react"
 
-interface Todo{
-    id:number
-    title:string
-}
 
 const WithoutCustomHook = () => {
-    const [data,setData]=useState<Todo[] | null>(null)
+    const [name,setName]=useState("")
+    const [email,setEmail]=useState("")
+    const [submitted,setSubmitted]=useState(false)
 
-    useEffect(()=>{
-        fetch("https://jsonplaceholder.typicode.com/todos").then((res)=>res.json()).then((data:Todo[])=>setData(data))
-    })
+    const handleSubmit=(event:React.FormEvent)=>{
+        event.preventDefault()
+        setSubmitted(true)
+        console.log("Submitted:",{name,email})
+    }
 
   return (
-    <>
-        {data && data.map((item)=>{
-            return <p key={item.id}>{item.title}</p>
-        })}
-    </>
+    <div>
+        {submitted ? (
+            <h2>Thank You for submitting your information</h2>
+        ):(
+            <form onSubmit={handleSubmit}>
+                <div>
+                    <label>
+                        Name:
+                        <input type="text" value={name} onChange={(e)=>setName(e.target.value)} required />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Email:
+                        <input type="email" value={email} onChange={(e)=>setEmail(e.target.value)} required/>
+                    </label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        )}
+    </div>
   )
 }
 
