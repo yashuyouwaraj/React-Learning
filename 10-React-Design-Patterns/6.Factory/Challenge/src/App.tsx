@@ -1,32 +1,40 @@
-import CardFactory from "./shared/CardFactory";
+import type { ComponentConfig } from "./utils/ComponentFactory"
+import ComponentFactory from "./utils/ComponentFactory"
 
+const buttonConfig:ComponentConfig={
+  type:"button",
+  props:{
+    label:"Click Me",
+    onClick:()=>alert("Clicked"),
+    disabled:false
+  }
+}
+
+const cardConfig:ComponentConfig={
+  type:"card",
+  props:{
+    title:"My Man Card Title",
+    content:"Some content Here",
+    footer:"footer"
+  }
+}
+
+const modalConfig:ComponentConfig={
+  type:"modal",
+  props:{
+    header:" Hello Modal Title",
+    content:"Some content Here",
+    footer:"footer"
+  }
+}
 
 const App = () => {
 
-  const imageCardData = {
-    src: "https://images.unsplash.com/photo-1500964757637-c85e8a162699?q=80&w=3903&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "Placeholder Image",
-  };
-
-  const textCardData = {
-    text: "This is a simple text card.",
-  };
-
-  const profileCardData = {
-    name: "John Doe",
-    bio: "A software engineer with a passion for React.",
-    avatar:
-      "https://images.unsplash.com/photo-1487349703519-90c8e4f426a7?q=80&w=3853&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  };
-
   return (
     <div>
-      <h1>Factory Design Pattern in React</h1>
-      <div className="flex flex-wrap">
-        <CardFactory type="image" data={imageCardData} />
-        <CardFactory type="profile" data={profileCardData} />
-        <CardFactory type="text" data={textCardData} />
-      </div>
+      {ComponentFactory(buttonConfig)}
+      {ComponentFactory(cardConfig)}
+      {ComponentFactory(modalConfig)}
     </div>
   )
 }
