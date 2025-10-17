@@ -1,9 +1,15 @@
-
+import { MyProvider } from "./context/MyContext";
+import SlotComponent from "./components/SlotComponent";
+import SlotContent from "./components/SlotContent";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <MyProvider>
+      <SlotComponent>
+        <SlotContent />
+      </SlotComponent>
+    </MyProvider>
+  );
+};
 
-export default App
+export default App;
