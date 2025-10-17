@@ -1,8 +1,13 @@
+import Card from "./components/Card"
 
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Card cardTitle={<h1>This is my Card Title</h1>}
+        cardContent={<p>This is my card content</p>}
+        cardButton={<button>Learn More</button>} />
+    </div>
   )
 }
 
