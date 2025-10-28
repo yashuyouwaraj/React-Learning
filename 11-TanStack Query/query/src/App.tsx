@@ -1,7 +1,10 @@
+import WithoutTanStackQuery from "./components/WithoutTanStackQuery"
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <WithoutTanStackQuery />
+    </div>
   )
 }
 
