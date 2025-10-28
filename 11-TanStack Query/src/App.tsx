@@ -1,4 +1,7 @@
+import Deduplication from "./components/Deduplication"
+import FetchOneItem from "./components/FetchOneItem"
 import RaceCondition from "./components/RaceCondition"
+import StaleTime from "./components/StaleTime"
 import WithoutTanStackQuery from "./components/WithoutTanStackQuery"
 import WithTanStackQuery from "./components/WithTanStackQuery"
 
@@ -8,6 +11,9 @@ const App = () => {
       {/* <WithoutTanStackQuery /> */}
       {/* <RaceCondition /> */}
       {/* <WithTanStackQuery /> */}
+      {/* <Deduplication /> */}
+      {/* <StaleTime /> */}
+      <FetchOneItem />
     </div>
   )
 }
