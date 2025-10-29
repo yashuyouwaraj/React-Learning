@@ -1,6 +1,7 @@
 import Deduplication from "./components/Deduplication"
 import FetchFromMultipleEndpoints from "./components/FetchFromMultipleEndpoints"
 import FetchOneItem from "./components/FetchOneItem"
+import InfiniteQueries from "./components/InfiniteQueries"
 import MutatingData from "./components/MutatingData"
 import Pagination from "./components/Pagination"
 import RaceCondition from "./components/RaceCondition"
@@ -21,7 +22,8 @@ const App = () => {
       {/* <RefetchInterval /> */}
       {/* <FetchFromMultipleEndpoints /> */}
       {/* <MutatingData /> */}
-      <Pagination />
+      {/* <Pagination /> */}
+      <InfiniteQueries />
     </div>
   )
 }
