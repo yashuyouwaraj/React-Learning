@@ -40,7 +40,7 @@ const MutatingData = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-100 via-white to-purple-100 p-4">
+    <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-indigo-100 via-white to-purple-100 p-4">
       <div className="bg-white shadow-lg rounded-2xl w-full max-w-md p-6 border border-gray-100">
         <h1 className="text-2xl font-semibold text-center text-indigo-700 mb-6">
           📝 Create New Todo

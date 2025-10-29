@@ -2,6 +2,7 @@ import Deduplication from "./components/Deduplication"
 import FetchFromMultipleEndpoints from "./components/FetchFromMultipleEndpoints"
 import FetchOneItem from "./components/FetchOneItem"
 import MutatingData from "./components/MutatingData"
+import Pagination from "./components/Pagination"
 import RaceCondition from "./components/RaceCondition"
 import RefetchInterval from "./components/RefetchInterval"
 import StaleTime from "./components/StaleTime"
@@ -19,7 +20,8 @@ const App = () => {
       {/* <FetchOneItem /> */}
       {/* <RefetchInterval /> */}
       {/* <FetchFromMultipleEndpoints /> */}
-      <MutatingData />
+      {/* <MutatingData /> */}
+      <Pagination />
     </div>
   )
 }
