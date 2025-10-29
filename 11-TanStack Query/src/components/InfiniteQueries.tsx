@@ -26,6 +26,7 @@ const InfiniteQueries = () => {
   } = useInfiniteQuery({
     queryKey: ["todos"],
     queryFn: fetchTodos,
+    initialPageParam: 1,
     getNextPageParam: (lastPage, pages) =>
       lastPage.length === 10 ? pages.length + 1 : undefined,
   });
@@ -55,7 +56,7 @@ const InfiniteQueries = () => {
   // Loading and Error States
   if (isLoading)
     return (
-      <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-indigo-100 to-purple-100">
+      <div className="flex items-center justify-center min-h-screen bg-linear-to-br from-indigo-100 to-purple-100">
         <div className="text-indigo-700 font-semibold text-lg animate-pulse">
           Loading Todos...
         </div>
@@ -71,7 +72,7 @@ const InfiniteQueries = () => {
 
   // Main UI
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-100 via-white to-purple-100 py-10 px-4 flex flex-col items-center">
+    <div className="min-h-screen bg-linear-to-br from-indigo-100 via-white to-purple-100 py-10 px-4 flex flex-col items-center">
       <h1 className="text-3xl font-bold text-indigo-700 mb-8">📜 Infinite Todos</h1>
 
       <div className="w-full max-w-2xl space-y-4">
