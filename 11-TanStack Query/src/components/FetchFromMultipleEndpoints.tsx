@@ -59,7 +59,7 @@ const FetchFromMultipleEndpoints = () => {
           2,
         )}
       </pre>
-      <button onClick={handleNextTodoClick}>Next Todo</button>
+      <button className="bg-teal-700 p-2 rounded text-white" onClick={handleNextTodoClick}>Next Todo</button>
 
       <h1>Posts</h1>
       <pre>
@@ -69,7 +69,7 @@ const FetchFromMultipleEndpoints = () => {
           2
         )}
       </pre>
-      <button onClick={handleNextPostClick}>Next Post</button>
+      <button className="bg-teal-700 p-2 rounded text-white" onClick={handleNextPostClick}>Next Post</button>
     </div>
   );
 };

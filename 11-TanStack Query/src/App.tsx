@@ -1,6 +1,7 @@
 import Deduplication from "./components/Deduplication"
 import FetchFromMultipleEndpoints from "./components/FetchFromMultipleEndpoints"
 import FetchOneItem from "./components/FetchOneItem"
+import MutatingData from "./components/MutatingData"
 import RaceCondition from "./components/RaceCondition"
 import RefetchInterval from "./components/RefetchInterval"
 import StaleTime from "./components/StaleTime"
@@ -17,7 +18,8 @@ const App = () => {
       {/* <StaleTime /> */}
       {/* <FetchOneItem /> */}
       {/* <RefetchInterval /> */}
-      <FetchFromMultipleEndpoints />
+      {/* <FetchFromMultipleEndpoints /> */}
+      <MutatingData />
     </div>
   )
 }
