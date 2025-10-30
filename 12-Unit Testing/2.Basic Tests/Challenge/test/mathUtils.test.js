@@ -1,4 +1,4 @@
-import {describe,it,test,expect} from "vitest"
+import {describe,it,expect} from "vitest"
 import { factorial, fibonacci, gcd } from "../src/mathUtils"
 
 describe("Math Utils",()=>{
