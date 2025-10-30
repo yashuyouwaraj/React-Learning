@@ -1,6 +1,10 @@
-export const reverseString=(str)=> str.split("").reverse().join("")
+export const reverseString=(str)=> {
+    return str.split("").reverse().join("")
+}
 
-export const capitalizeWords=(str)=> str.charAt(0).toUpperCase()+str.slice(1).toLowerCase()
+export const capitalizeWords=(str)=> {
+    return str.charAt(0).toUpperCase()+str.slice(1).toLowerCase()
+}
 
 export function isPalindrome(str) {
   // Step 1: Clean the input string
