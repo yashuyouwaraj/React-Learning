@@ -1,4 +1,3 @@
-
 const QueryByQueries = () => {
   return (
     <div>
@@ -21,7 +20,7 @@ const QueryByQueries = () => {
 
       <input value="Pre-filled Text" />
     </div>
-  )
-}
+  );
+};
 
-export default QueryByQueries
+export default QueryByQueries;
