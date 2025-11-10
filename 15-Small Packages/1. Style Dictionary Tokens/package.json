@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "style-dictionary": "^5.1.1",
+    "style-dictionary-utils": "^4.1.1"
+  },
+  "scripts": {
+    "build": "style-dictionary build"
+  }
+}
