@@ -1,0 +1,15 @@
+{
+  "name": "@yashu-ds/foundation",
+  "packageManager": "yarn@4.11.0",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build-tokens": "style-dictionary build --config style-dictionary.config.js",
+    "build-style-dictionary": "style-dictionary build --config style-dictionary.config.js",
+    "build": "yarn build-tokens && tsc"
+  },
+  "devDependencies": {
+    "style-dictionary": "^5.1.1",
+    "typescript": "^5.9.3"
+  }
+}

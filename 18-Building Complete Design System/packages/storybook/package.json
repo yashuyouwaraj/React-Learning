@@ -1,0 +1,12 @@
+{
+  "name": "@yashu-ds/storybook",
+  "packageManager": "yarn@4.11.0",
+  "private": true,
+  "dependencies": {
+    "@yashu-ds/foundation": "workspace:^",
+    "@yashu-ds/react": "workspace:^"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@yashu-ds/react",
+  "packageManager": "yarn@4.11.0",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@yashu-ds/foundation": "workspace:^"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
